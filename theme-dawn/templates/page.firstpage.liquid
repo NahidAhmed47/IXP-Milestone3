@@ -1,0 +1,21 @@
+<div class="container">
+  <p>Variable assign in Liquid:</p>
+  {% assign country = 'Bangladesh' %}
+  {{ country }}
+  <p>Math Operation in Liquid:</p>
+  {% assign number1 = 10 %}
+  {% assign number2 = 5 %}
+  <p>Addition : {{ number1 | plus: number2 }}</p>
+  <p>Subtraction : {{ number1 | minus: number2 }}</p>
+  <p>Multiplication : {{ number1 | times: number2 }}</p>
+  <p>Divition : {{ number1 | divided_by: number2 }}</p>
+  <p>Modulus : {{ number1 | modulo: number2 }}</p>
+</div>
+
+<style>
+  .container{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20vh;
+  }
+</style>
